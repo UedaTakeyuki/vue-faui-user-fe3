@@ -39,6 +39,4 @@ Github [issues](https://github.com/UedaTakeyuki/vue-faui-user-fe2/issues) are av
 [Dr. Takeyuki UEDA](https://atelierueda.uedasoft.com/)
 
 ## History
-- 1.0.0  2021.06.26 created from https://github.com/UedaTakeyuki/vue-faui-user-fe
-- 1.1.1  2021.06.28 interface change (backword compatibility has still remained)
-- 1.2.1  2021.06.29 interface change (backword compatibility has still remained)
+- 1.0.0  2021.10.07 created from https://github.com/UedaTakeyuki/vue-faui-user-fe2
