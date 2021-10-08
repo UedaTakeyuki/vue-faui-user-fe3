@@ -1,1 +1,2 @@
 2021.10.07 start from vue-faui-user-fe2
+2021.10.08 fix: check brank

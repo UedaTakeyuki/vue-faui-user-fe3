@@ -54,7 +54,9 @@ export default {
           links.push(link)
         }
       }
-      links.push(...this.routeAdding)
+      if (this.routeAdding != undefined){
+        links.push(...this.routeAdding)
+      }
       return links
     }
   }
