@@ -32,7 +32,6 @@ export default {
   data: function () {
     return {
       defaultLinks: [
-        { icon: '', text: 'Buy new Bind', route: '/purchaseBind'},
         { icon: '', text: 'Purchase history', route: '/payments'},
       ],
     }

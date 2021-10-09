@@ -1,5 +1,4 @@
 import PurchaseFront from './PurchaseFront.vue'
-import PurchaseBind from './PurchaseBind.vue'
 import PurchaseSucceeded from './PurchaseSucceeded.vue'
 import Payments from './Payments.vue'
 
@@ -9,11 +8,6 @@ export default {
       path: '/purchaseFront',
       name: 'purchase',
       component: PurchaseFront
-    },
-    {
-      path: '/purchaseBind',
-      name: 'purchaseBind',
-      component: PurchaseBind
     },
     {
       path: '/purchaseSucceeded/:sessionID',
