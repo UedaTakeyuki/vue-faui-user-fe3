@@ -6,7 +6,7 @@ import Payments from './Payments.vue'
 export default {
   routes: [
     {
-      path: '/purchase',
+      path: '/purchaseFront',
       name: 'purchase',
       component: PurchaseFront
     },
@@ -26,5 +26,5 @@ export default {
       component: Payments
     },
   ],
-  menuItem: { icon: 'shop', text: 'Purchase', route: '/purchase'},
+  menuItem: { icon: 'shop', text: 'Purchase', route: '/purchaseFront'},
 }
