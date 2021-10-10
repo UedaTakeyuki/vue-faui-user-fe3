@@ -39,16 +39,15 @@ export default {
   computed: {
     links: function(){
       let links = []
-      for (let link of this.defaultLinks) {
+      DefaultLinks: for (let link of this.defaultLinks) {
         if (this.routeDeleting != null){
           for (let toDel of this.routeDeleting) {
             if (link.route == toDel){
               console.log("hit")
-              continue
-            } else {
-              links.push(link)
+              continue DefaultLinks
             }
           }
+          links.push(link)
         } else {
           links.push(link)
         }
