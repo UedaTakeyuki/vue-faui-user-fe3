@@ -83,7 +83,7 @@
           fab
           small
           class="gray--text"
-          @click="getPayments(payments[limit-1].ID,'')"
+          @click="getPayments(payments[payments.length-1].ID,'')"
         >
           <v-icon>navigate_next</v-icon>
         </v-btn>
@@ -142,15 +142,21 @@ export default {
             console.log("response:", response)
             console.log("params",params)
             if (response.status == 200) {
-              this.payments = response.data.payments
-              this.tobecontinued = response.data.tobecontinued
-              this.latestStartingAfter = response.data.startingAfter
-              this.latestEndingBefore = response.data.endingBefore
+              if (response.data.payments.length != 0){
+                this.payments = response.data.payments
+                this.tobecontinued = response.data.tobecontinued
+                this.latestStartingAfter = response.data.startingAfter
+                this.latestEndingBefore = response.data.endingBefore
 
-              // first get
-//              if (params.startingAfter == "" && params.endingBefore == ""){
-              if (response.data.latestPayments && this.payments.length != 0){
-                this.latestPaymentID = this.payments[0].ID
+                // first get
+  //              if (params.startingAfter == "" && params.endingBefore == ""){
+                if (response.data.latestPayments && this.payments.length != 0){
+                  this.latestPaymentID = this.payments[0].ID
+                }
+              } else {
+                // response.data.payments.length == 0
+                this.latestEndingBefore = ""
+                this.tobecontinued = false
               }
 
               // stop progress_linear
